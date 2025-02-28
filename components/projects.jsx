@@ -101,7 +101,7 @@ const Projects = () => {
       description:
         "When an ex-colleague asked me to create them a simple listing website on wordpress for them I jumped at the opportunity. This is the staged version of the site. ",
       image:
-        "/dice.png",
+        "/ribpb.png",
         tags: ["Javascript","html","css", "wordpress", "gsap"],
       liveLink: "https://maxd64.sg-host.com/",
       githubLink: "https://github.com/donnermax",
