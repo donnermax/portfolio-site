@@ -35,6 +35,7 @@ const Navbar = () => {
             <Link
               key={item.name}
               href={item.href}
+              aria-label={`${item.name} button`}
               className="text-sm font-medium transition-colors hover:text-primary"
             >
               {item.name}
@@ -46,7 +47,7 @@ const Navbar = () => {
         {/* Mobile Navigation Toggle */}
         <div className="flex md:hidden">
           <ThemeToggle />
-          <Button variant="ghost" size="icon" onClick={toggleMenu} className="ml-2 cursor-pointer">
+          <Button aria-label="nav toggle button" variant="ghost" size="icon" onClick={toggleMenu} className="ml-2 cursor-pointer">
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
         </div>
@@ -60,6 +61,7 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 href={item.href}
+                aria-label={`${item.name} button`}
                 className="text-sm font-medium transition-colors hover:text-primary"
                 onClick={toggleMenu}
               >

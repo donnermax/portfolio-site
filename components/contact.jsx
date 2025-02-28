@@ -63,7 +63,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-16">
       <div className="container px-4 md:px-6">
-        <p className="my-6 px-4 text-left text-muted-foreground">Feel free to drop me a line <a className="underline text-[#ccc] md:hover:text-[#bbb]" href="mailto:donnermax@outlook.com">donnermax@outlook.com</a> or fill out the form below and I&apos;ll be in touch. 
+        <p className="my-6 px-4 text-left text-muted-foreground">Feel free to drop me a line <a className="underline md:hover:text-[#bbb]" href="mailto:donnermax@outlook.com">donnermax@outlook.com</a> or fill out the form below and I&apos;ll be in touch. 
         </p>
         <div className="lg:col-span-2 my-4">
           <Card>
