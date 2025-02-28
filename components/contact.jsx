@@ -133,7 +133,7 @@ const Contact = () => {
                   </div>
                 )}
 
-                <Button type="submit" className="w-full" disabled={isSubmitting}>
+                <Button aria-label="submit button" type="submit" className="w-full" disabled={isSubmitting}>
                   {isSubmitting ? (
                     <span className="flex items-center">
                       <svg

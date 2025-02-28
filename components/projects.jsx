@@ -119,25 +119,25 @@ const Projects = () => {
 
         <div className="flex justify-center mb-8">
           <div className="flex flex-wrap gap-2 justify-center">
-            <Button
+            <Button aria-label="filter button all"
               variant={filter === "all" ? "default" : "outline"}
               onClick={() => setFilter("all")}
             >
               All
             </Button>
-            <Button
+            <Button aria-label="filter button web"
               variant={filter === "web" ? "default" : "outline"}
               onClick={() => setFilter("web")}
             >
               Web
             </Button>
-            <Button
+            <Button aria-label="filter button webapp"
               variant={filter === "webapp" ? "default" : "outline"}
               onClick={() => setFilter("webapp")}
             >
               Webapp
             </Button>
-            <Button
+            <Button aria-label="filter button game"
               variant={filter === "game" ? "default" : "outline"}
               onClick={() => setFilter("game")}
             >
@@ -183,8 +183,8 @@ const Projects = () => {
               {/* Footer - Ensure buttons are properly spaced */}
               <CardFooter className="flex justify-between mt-auto">
                 {project.githubLink ? (
-                  <Button variant="outline" size="sm" asChild>
-                    <a
+                  <Button aria-label="github button" variant="outline" size="sm" asChild>
+                    <a aria-label="github link"
                       href={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -195,8 +195,8 @@ const Projects = () => {
                 ) : (
                   <span /> // This keeps the Live Demo button on the right
                 )}
-                <Button size="sm" asChild>
-                  <a
+                <Button aria-label="project link button" size="sm" asChild>
+                  <a aria-label="project link"
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"

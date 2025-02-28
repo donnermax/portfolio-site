@@ -40,7 +40,7 @@ const Hero = () => {
             I&apos;m a passionate web developer that loves creating beautiful, functional, and user-friendly websites and web-apps.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
-            <Button asChild size="lg" className="px-4 py-2">
+            <Button aria-label="go to projects button" asChild size="lg" className="px-4 py-2">
               <Link
                 className="flex items-center justify-center"
                 href="#projects"
@@ -48,7 +48,7 @@ const Hero = () => {
                 View My Work <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg">
+            <Button aria-label="download cv button" asChild variant="outline" size="lg">
               <a href="/maxdonnercv.pdf" download>
                 <Download className="mr-2 h-4 w-4" /> Download CV
               </a>
