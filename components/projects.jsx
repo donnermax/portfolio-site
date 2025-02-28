@@ -30,7 +30,7 @@ const Projects = () => {
       title: "Boat Club web app - Member",
       description:
         "This webapp allows members to view, create and manage their boat bookings. Designed in a user friendly and visually appealing way.",
-      image: "/bctmember.jpg",
+      image: "/bctmembersite.jpg",
       tags: ["React", "Supabase", "Figma", "Next.js"],
       liveLink: "https://www.myboatclub.app/",
       githubLink: "https://github.com/donnermax",
