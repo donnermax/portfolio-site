@@ -46,7 +46,7 @@ const About = () => {
             <div className="grid grid-cols-2 gap-4 mt-8">
               <Card>
                 <CardContent className="p-4 text-center">
-                  <h4 className="font-bold text-4xl text-primary">2+</h4>
+                  <h4 className="font-bold text-4xl text-primary">1+</h4>
                   <p className="text-sm text-muted-foreground mt-2">
                     Years Experience
                   </p>
