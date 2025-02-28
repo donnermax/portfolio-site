@@ -95,6 +95,42 @@ const Projects = () => {
       githubLink: "https://github.com/donnermax",
       category: "game",
     },
+    {
+      id: 8,
+      title: "RIBs and Powerboats",
+      description:
+        "When an ex-colleague asked me to create them a simple listing website on wordpress for them I jumped at the opportunity. This is the staged version of the site. ",
+      image:
+        "/dice.png",
+        tags: ["Javascript","html","css", "wordpress", "gsap"],
+      liveLink: "https://maxd64.sg-host.com/",
+      githubLink: "https://github.com/donnermax",
+      category: "web",
+    },
+    {
+      id: 9,
+      title: "The Bankist",
+      description:
+        "As part of a Javascript course I built a basic site that allows you to login and transfer money between two accounts. Either use js with 1111 or jd with 2222.",
+      image:
+        "/bankist.png",
+        tags: ["Javascript","html","css"],
+      liveLink: "https://the-fake-bank-ist.netlify.app/",
+      githubLink: "https://github.com/donnermax",
+      category: "web",
+    },
+    {
+      id: 10,
+      title: "Adventur",
+      description:
+        "A small webapp/site built in next playing around with pages and app router. This is not a live site.",
+      image:
+        "/adventur.png",
+        tags: ["Nextjs","html","css","javascript"],
+      liveLink: "https://adventurine.netlify.app/",
+      githubLink: "https://github.com/donnermax",
+      category: "web",
+    },
   ];
 
   const [filter, setFilter] = useState("all");
