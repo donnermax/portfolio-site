@@ -67,5 +67,5 @@ const About = () => {
     </section>
   );
 };
-// test
+
 export default About;
