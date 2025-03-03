@@ -80,3 +80,40 @@
     @apply bg-background text-foreground;
   }
 }
+
+.button-test {
+  position: relative; /* Needed for the pseudo-element positioning */
+  display: inline-flex; /* Align icon and text nicely */
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Animate the main text */
+.text-container {
+  display: block;
+  transition: transform 300ms ease;
+}
+
+/* Pseudo-element for the hover text */
+.button-test::before {
+  content: "Download now";
+  position: absolute;
+  left: 0;
+  top: 100%; /* Start below the container */
+  width: 100%;
+  text-align: left; /* Adjust as needed */
+  transition: transform 300ms ease;
+  /* Inherit background if needed, or set a color */
+  background: inherit;
+  padding-left: 2.5rem; /* Adjust to account for the icon if needed */
+}
+
+/* On hover, slide the original text out */
+.button-test:hover .text-container {
+  transform: translateY(-500%);
+}
+
+/* On hover, slide the pseudo-element up */
+.button-test:hover::before {
+  transform: translateY(-160%);
+}

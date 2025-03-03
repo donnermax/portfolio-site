@@ -13,13 +13,13 @@ const Hero = () => {
     let index = 0;
     const timer = setInterval(() => {
       if (index < fullText.length) {
-        setTypedText(prev => prev + fullText.charAt(index));
+        setTypedText((prev) => prev + fullText.charAt(index));
         index++;
       } else {
         clearInterval(timer);
       }
     }, 100);
-    
+
     return () => clearInterval(timer);
   }, []);
 
@@ -37,10 +37,16 @@ const Hero = () => {
             </p>
           </div>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-            I&apos;m a passionate web developer that loves creating beautiful, functional, and user-friendly websites and web-apps.
+            I&apos;m a passionate web developer that loves creating beautiful,
+            functional, and user-friendly websites and web-apps.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
-            <Button aria-label="go to projects button" asChild size="lg" className="px-4 py-2">
+            <Button
+              aria-label="go to projects button"
+              asChild
+              size="lg"
+              className="px-4 py-2"
+            >
               <Link
                 className="flex items-center justify-center"
                 href="#projects"
@@ -48,9 +54,15 @@ const Hero = () => {
                 View My Work <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-            <Button aria-label="download cv button" asChild variant="outline" size="lg">
-              <a href="/maxdonnercv.pdf" download>
-                <Download className="mr-2 h-4 w-4" /> Download CV
+            <Button
+              aria-label="download cv button"
+              asChild
+              variant="outline"
+              size="lg"
+            >
+              <a href="/maxdonnercv.pdf" download className="button-test">
+                <Download className="mr-2 h-4 w-4" />
+                <span className="text-container">Download CV</span>
               </a>
             </Button>
           </div>
