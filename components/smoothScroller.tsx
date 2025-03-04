@@ -7,6 +7,7 @@ import Lenis from "@studio-freight/lenis";
 interface SmoothScrollerProps {
   children: React.ReactNode;
 }
+// test
 
 const SmoothScroller: React.FC<SmoothScrollerProps> = ({ children }) => {
   useEffect(() => {
