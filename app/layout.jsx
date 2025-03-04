@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import { ThemeProvider } from '../components/theme-provider';
+import SmoothScroller from '../components/SmoothScroller';
+
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,6 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
+      <SmoothScroller>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="flex min-h-screen flex-col">
             <Navbar />
@@ -22,6 +25,7 @@ export default function RootLayout({ children }) {
             <Footer />
           </div>
         </ThemeProvider>
+        </SmoothScroller>
       </body>
     </html>
   );
