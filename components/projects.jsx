@@ -18,7 +18,8 @@ const Projects = () => {
     {
       id: 1,
       title: "The Westbourne Cafe",
-      description: "A wordpress website for a cafe. Fully responsive with multiple advanced custom fields to help the owners easily make changes. ",
+      description:
+        "A wordpress website for a cafe. Fully responsive with multiple advanced custom fields to help the owners easily make changes. ",
       image: "/wbcafe.jpg",
       tags: ["Javascript", "Wordpress", "Html5", "Tailwind"],
       liveLink: "https://www.thewestbournecafe.co.uk/",
@@ -52,8 +53,7 @@ const Projects = () => {
       title: "Guess My Number",
       description:
         "Guess a number between 1 and 20, each time you guess wrong you'll get a hint if the number is lower or higher than your guess. Once you guess right you'll get a score. Can you beat 3?",
-      image:
-        "/guess.png",
+      image: "/guess.png",
       tags: ["JavaScript", "css", "html"],
       liveLink: "https://guess-my-number-new.netlify.app/",
       githubLink: "https://github.com/donnermax",
@@ -64,8 +64,7 @@ const Projects = () => {
       title: "The QR Co",
       description:
         "After being annoyed at having to pay for dynamic QR codes I decided to build my own web app. Create, manage and download your dynamic qr codes. Currently being used but new signups have been disabled.",
-      image:
-        "/qrapp.png",
+      image: "/qrapp.png",
       tags: ["Next.js", "Tailwind", "React", "Supabase", "Typescript"],
       liveLink: "https://www.theqrco.com/",
       githubLink: "https://github.com/donnermax",
@@ -76,9 +75,8 @@ const Projects = () => {
       title: "Mapout",
       description:
         "As part of a Javascript course, this was a fun project that utilises browser storage to map your workouts. These workouts will be stored unless the cache is deleted.",
-      image:
-        "/mapout.png",
-      tags: ["Javascript","html","css"],
+      image: "/mapout.png",
+      tags: ["Javascript", "html", "css"],
       liveLink: "https://my-mapout.netlify.app/",
       githubLink: "https://github.com/donnermax",
       category: "web",
@@ -88,9 +86,8 @@ const Projects = () => {
       title: "Roll-it",
       description:
         "A two player game where you will roll a six sided dice, every time you roll the count accumulates until you click hold. Carefull though, if you roll a 1 your accumulation is removed and its the next players turn. First person to 50 wins!",
-      image:
-        "/dice.png",
-      tags: ["Javascript","html","css"],
+      image: "/dice.png",
+      tags: ["Javascript", "html", "css"],
       liveLink: "https://its-the-dicey-game.netlify.app/",
       githubLink: "https://github.com/donnermax",
       category: "game",
@@ -100,9 +97,8 @@ const Projects = () => {
       title: "RIBs and Powerboats",
       description:
         "When an ex-colleague asked me to create them a simple listing website on wordpress for them I jumped at the opportunity. This is the staged version of the site. ",
-      image:
-        "/ribpb.png",
-        tags: ["Javascript","html","css", "wordpress", "gsap"],
+      image: "/ribpb.png",
+      tags: ["Javascript", "html", "css", "wordpress", "gsap"],
       liveLink: "https://maxd64.sg-host.com/",
       githubLink: "https://github.com/donnermax",
       category: "web",
@@ -112,9 +108,8 @@ const Projects = () => {
       title: "The Bankist",
       description:
         "As part of a Javascript course I built a basic site that allows you to login and transfer money between two accounts. Either use js with 1111 or jd with 2222.",
-      image:
-        "/bankist.png",
-        tags: ["Javascript","html","css"],
+      image: "/bankist.png",
+      tags: ["Javascript", "html", "css"],
       liveLink: "https://the-fake-bank-ist.netlify.app/",
       githubLink: "https://github.com/donnermax",
       category: "web",
@@ -124,9 +119,8 @@ const Projects = () => {
       title: "Adventur",
       description:
         "A small webapp/site built in next playing around with pages and app router. This is not a live site.",
-      image:
-        "/adventur.png",
-        tags: ["Nextjs","html","css","javascript"],
+      image: "/adventur.png",
+      tags: ["Nextjs", "html", "css", "javascript"],
       liveLink: "https://adventurine.netlify.app/",
       githubLink: "https://github.com/donnermax",
       category: "web",
@@ -155,25 +149,29 @@ const Projects = () => {
 
         <div className="flex justify-center mb-8">
           <div className="flex flex-wrap gap-2 justify-center">
-            <Button aria-label="filter button all"
+            <Button
+              aria-label="filter button all"
               variant={filter === "all" ? "default" : "outline"}
               onClick={() => setFilter("all")}
             >
               All
             </Button>
-            <Button aria-label="filter button web"
+            <Button
+              aria-label="filter button web"
               variant={filter === "web" ? "default" : "outline"}
               onClick={() => setFilter("web")}
             >
               Web
             </Button>
-            <Button aria-label="filter button webapp"
+            <Button
+              aria-label="filter button webapp"
               variant={filter === "webapp" ? "default" : "outline"}
               onClick={() => setFilter("webapp")}
             >
               Webapp
             </Button>
-            <Button aria-label="filter button game"
+            <Button
+              aria-label="filter button game"
               variant={filter === "game" ? "default" : "outline"}
               onClick={() => setFilter("game")}
             >
@@ -219,8 +217,14 @@ const Projects = () => {
               {/* Footer - Ensure buttons are properly spaced */}
               <CardFooter className="flex justify-between mt-auto">
                 {project.githubLink ? (
-                  <Button aria-label="github button" variant="outline" size="sm" asChild>
-                    <a aria-label="github link"
+                  <Button
+                    aria-label="github button"
+                    variant="outline"
+                    size="sm"
+                    asChild
+                  >
+                    <a
+                      aria-label="github link"
                       href={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -232,7 +236,8 @@ const Projects = () => {
                   <span /> // This keeps the Live Demo button on the right
                 )}
                 <Button aria-label="project link button" size="sm" asChild>
-                  <a aria-label="project link"
+                  <a
+                    aria-label="project link"
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"

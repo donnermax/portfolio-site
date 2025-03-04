@@ -48,10 +48,11 @@ const Hero = () => {
               className="px-4 py-2"
             >
               <Link
-                className="flex items-center justify-center"
+                className="flex items-center justify-center group"
                 href="#projects"
               >
-                View My Work <ArrowRight className="ml-2 h-4 w-4" />
+                View My Work{" "}
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-500 md:group-hover:rotate-90" />
               </Link>
             </Button>
             <Button
