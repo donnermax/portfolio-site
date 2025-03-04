@@ -1,15 +1,10 @@
-// components/SmoothScroller.tsx
+// components/SmoothScroller.jsx
 "use client";
 
 import React, { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 
-interface SmoothScrollerProps {
-  children: React.ReactNode;
-}
-// test
-
-const SmoothScroller: React.FC<SmoothScrollerProps> = ({ children }) => {
+const SmoothScroller = ({ children }) => {
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
@@ -27,7 +22,7 @@ const SmoothScroller: React.FC<SmoothScrollerProps> = ({ children }) => {
       // Optional: handle scroll events here.
     });
 
-    const raf = (time: number) => {
+    const raf = (time) => {
       lenis.raf(time);
       requestAnimationFrame(raf);
     };
